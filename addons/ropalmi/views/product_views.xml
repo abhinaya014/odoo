@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_ropalmi_product_form" model="ir.ui.view">
+            <field name="name">ropalmi.product.form</field>
+            <field name="model">ropalmi.product</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <field name="image" widget="image" class="oe_avatar"/>
+                        <group>
+                            <field name="name"/>
+                            <field name="reference"/>
+                            <field name="category"/>
+                            <field name="size"/>
+                            <field name="color"/>
+                            <field name="price"/>
+                            <field name="stock"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_ropalmi_product_tree" model="ir.ui.view">
+            <field name="name">ropalmi.product.list</field>
+            <field name="model">ropalmi.product</field>
+            <field name="type">list</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="category"/>
+                    <field name="size"/>
+                    <field name="price"/>
+                    <field name="stock"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="action_ropalmi_product" model="ir.actions.act_window">
+            <field name="name">Productos</field>
+            <field name="res_model">ropalmi.product</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_ropalmi_root" name="RopAlmi" sequence="10"/>
+        <menuitem id="menu_ropalmi_product" name="Productos" parent="menu_ropalmi_root" action="action_ropalmi_product" sequence="10"/>
+    </data>
+</odoo>

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ropalmi_product_user,ropalmi.product,model_ropalmi_product,base.group_user,1,1,1,1
+access_ropalmi_sale_user,ropalmi.sale,model_ropalmi_sale,base.group_user,1,1,1,1
+access_ropalmi_sale_line_user,ropalmi.sale.line,model_ropalmi_sale_line,base.group_user,1,1,1,1

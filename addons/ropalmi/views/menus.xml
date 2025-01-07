@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <menuitem id="menu_ropalmi_root" name="RopAlmi" sequence="10"/>
+   
+   <menuitem id="menu_ropalmi_master" name="Maestros" parent="menu_ropalmi_root" sequence="10"/>
+   <menuitem id="menu_ropalmi_product" name="Productos" parent="menu_ropalmi_master" action="action_ropalmi_product" sequence="10"/>
+   
+   <menuitem id="menu_ropalmi_operations" name="Operaciones" parent="menu_ropalmi_root" sequence="20"/>
+   <menuitem id="menu_ropalmi_sale" name="Ventas" parent="menu_ropalmi_operations" action="action_ropalmi_sale" sequence="10"/>
+   <menuitem id="menu_ropalmi_purchase" name="Compras" parent="menu_ropalmi_operations" action="action_ropalmi_purchase" sequence="20"/>
+</odoo>
